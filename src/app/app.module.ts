@@ -6,18 +6,24 @@ import { ReadComponent } from './read/read.component';
 import { CreateComponent } from './create/create.component';
 import { StoreModule } from '@ngrx/store';
 import {reducer} from './reducers/tutorial.reducer';
+import { AppRoutingModule } from './app-routing.module';
+import { HeroesComponent } from './heroes/heroes.component';
+import { NgrxReadCreateComponent } from './ngrx-read-create/ngrx-read-create.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReadComponent,
-    CreateComponent
+    CreateComponent,
+    HeroesComponent,
+    NgrxReadCreateComponent
   ],
   imports: [
     BrowserModule,
     StoreModule.forRoot({
       tutorial: reducer
-    })
+    }),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
