@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject, Observable } from 'rxjs';
+import {Subject, Observable, pipe} from 'rxjs';
 import { scan } from 'rxjs/operators';
 import { omit } from 'lodash';
 import {reducer} from './reducers/firebase.reducer';
