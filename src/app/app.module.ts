@@ -9,6 +9,7 @@ import {reducer} from './reducers/tutorial.reducer';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesComponent } from './heroes/heroes.component';
 import { NgrxReadCreateComponent } from './ngrx-read-create/ngrx-read-create.component';
+import { FirebaseNgrxComponent } from './firebase-ngrx/firebase-ngrx.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { NgrxReadCreateComponent } from './ngrx-read-create/ngrx-read-create.com
     ReadComponent,
     CreateComponent,
     HeroesComponent,
-    NgrxReadCreateComponent
+    NgrxReadCreateComponent,
+    FirebaseNgrxComponent
   ],
   imports: [
     BrowserModule,
